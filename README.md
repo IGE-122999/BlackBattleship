@@ -1,5 +1,14 @@
-Identificação do grupo:
-Ricardo Cabrito 122999
-Tiado Reinolds 123011
-João Jesus 123025
-Dinis Oliveira 110764
+# ✴️⚓ Black Battleship
+
+---
+
+## Table of Contents
+[Identificação do Grupo](#-indetificacao-do-grupo)
+
+---
+
+## Identificação do grupo:
+Dinis Oliveira, nº 110764
+João Jesus, nº 123025
+Ricardo Cabrito, nº 122999
+Tiago Reinolds, nº 123011
