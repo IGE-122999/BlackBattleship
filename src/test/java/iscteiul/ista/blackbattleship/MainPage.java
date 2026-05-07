@@ -7,8 +7,8 @@ import static com.codeborne.selenide.Selenide.$x;
 
 // page_url = https://www.jetbrains.com/
 public class MainPage {
-    public SelenideElement seeDeveloperToolsButton = $x("//*[@data-test-marker='Developer Tools']");
-    public SelenideElement findYourToolsButton = $x("//*[@data-test='suggestion-action']");
-    public SelenideElement toolsMenu = $x("//div[@data-test='main-menu-item' and @data-test-marker = 'Developer Tools']");
+    public SelenideElement seeProductsButton = $x("//*[@data-test-marker='Products']");
+    public SelenideElement findYourToolsButton = $x("//*[@data-test='suggestion-link']");
+    public SelenideElement productsMenu = $x("//div[@data-test='main-menu-item' and @data-test-marker = 'Products']");
     public SelenideElement searchButton = $("[data-test='site-header-search-action']");
 }
