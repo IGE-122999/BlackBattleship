@@ -7,6 +7,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -38,6 +39,7 @@ public class IGE123025Tests {
     }
 
     @Test
+    @DisplayName("US01 - Jogar como Convidado; US29 - Jogador vs IA")
     public void playAsGuest() {
         sleep(3000);
 
@@ -62,7 +64,83 @@ public class IGE123025Tests {
     }
 
     @Test
+    @DisplayName("US14 - Disparo em coordenadas")
+    public void shootCoordinate() {
+        int shot1x = 2, shot1y = 2;
+        int shot2x = 5, shot2y = 7;
+
+        gameModeSelection();
+
+        sleep(3000);    // compasso de espera caso o adversário seja o primeiro a disparar
+
+        $x("//*[contains(text(),'Your boats')]")
+                .shouldBe(visible);
+
+        $("div.opponent .header.attack").shouldBe(visible);
+
+        SelenideElement cell1 = shoot(shot1x, shot1y);
+        //$("td.cell-" + shot1x + "-" + shot1y).shouldNotHave(cssClass("null"));
+
+        cell1.$("svg.hit, svg.no-hit").should(exist);
+
+        sleep(2000);
+
+        $("div.opponent .header.attack").shouldBe(visible);
+
+        SelenideElement cell2 = shoot(shot2x, shot2y);
+
+        cell2.$("svg.hit, svg.no-hit").should(exist);
+    }
+
+    private SelenideElement shoot(int x, int y) {
+        SelenideElement board = mainPage.getOpponentBoard.shouldBe(visible);
+        SelenideElement cell = board.$("td.cell-" + x + "-" + y);
+
+        cell.shouldBe(visible).click();
+
+        return cell;
+    }
+
+    @Test
+    @DisplayName("US17 - Deteção de navio afundado")
     public void sunkenShipDetection() {
+        gameModeSelection();
+
+        boolean shipSunken = false;
+        Random rand = new Random();
+
+        for (int i = 0; i < 50; i++) {
+            ElementsCollection availableCells = $$("td[class*='cell-']")
+                    .filterBy(cssClass("null"));
+
+            SelenideElement cell = availableCells.get(rand.nextInt(availableCells.size()));
+
+            cell.click();
+
+            sleep(500);
+
+            if($("img.is-destroyed").exists()) {
+                shipSunken = true;
+                break;
+            }
+        }
+
+        assertTrue(shipSunken, "Nenhum navio destruído");
+    }
+
+
+    private void closePopup() {
+        SelenideElement rejectButton = $x("//*[contains(text(),'not consent')]");
+
+        if (rejectButton.exists()) {
+            rejectButton
+                    .shouldBe(visible, Duration.ofSeconds(5))
+                    .click();
+            rejectButton.should(disappear, Duration.ofSeconds(5));
+        }
+    }
+
+    private void gameModeSelection() {
         sleep(3000);
 
         $x("//*[contains(text(), 'robot')]")
@@ -88,37 +166,5 @@ public class IGE123025Tests {
                 .click();
 
         sleep(2000);
-
-        boolean shipSunken = false;
-        Random rand = new Random();
-
-        for (int i = 0; i < 50; i++) {
-            ElementsCollection availableCells = $$("td[class*='cell-']")
-                    .filterBy(cssClass("null"));
-
-            SelenideElement cell = availableCells.get(rand.nextInt(availableCells.size()));
-
-            cell.click();
-
-            sleep(500);
-
-            if($("img.is-destroyed").exists()) {
-                shipSunken = true;
-                break;
-            }
-        }
-
-        assertTrue(shipSunken, "Nenhum navio destruído");
-    }
-
-    void closePopup() {
-        SelenideElement rejectButton = $x("//*[contains(text(),'not consent')]");
-
-        if (rejectButton.exists()) {
-            rejectButton
-                    .shouldBe(visible, Duration.ofSeconds(5))
-                    .click();
-            rejectButton.should(disappear, Duration.ofSeconds(5));
-        }
     }
 }
