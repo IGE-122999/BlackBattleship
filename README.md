@@ -13,6 +13,10 @@
 - Ricardo Cabrito, nº 122999
 - Tiago Reinolds, nº 123011
 
+Como referido no repositório anterior, alguns membros têm contas anteriores à cadeira que ficam associadas a alguns *commits*, as quais são identificadas de seguida:
+- Aluno: 123011, Conta associada: [Reynolds2005](https://github.com/Reynolds2005)
+- Aluno: 123025, Conta associada: [jcjesus45](https://github.com/jcjesus45)
+
 # 📋 Scrum Product Backlog – Battleship Online
 
 Este backlog descreve as User Stories para o desenvolvimento de um jogo de Batalha Naval online, seguindo a framework Scrum.
