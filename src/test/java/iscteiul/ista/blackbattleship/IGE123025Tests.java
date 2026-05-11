@@ -128,6 +128,28 @@ public class IGE123025Tests {
         assertTrue(shipSunken, "Nenhum navio destruído");
     }
 
+    @Test
+    @DisplayName("US26 - Estatísticas pessoais")
+    public void playerStats() {
+        sleep(2000);
+
+        mainPage.profileBtn.shouldBe(visible).click();
+
+        sleep(2000);
+
+        $x("//*[contains(text(),'My profile')]")
+                .shouldBe(visible)
+                .click();
+
+        sleep(1000);
+
+        $x("//*[@class='mat-mdc-tooltip-trigger text-success']")
+            .shouldBe(visible);
+
+        $x("//*[@class='mat-mdc-tooltip-trigger text-danger']")
+                .shouldBe(visible);
+    }
+
 
     private void closePopup() {
         SelenideElement rejectButton = $x("//*[contains(text(),'not consent')]");

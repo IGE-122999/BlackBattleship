@@ -10,4 +10,6 @@ public class GamesMainPage {
 
     SelenideElement battleshipBtn = $x("//*[contains(text(),'Battleship')]");
     SelenideElement getOpponentBoard = $("div.opponent").$("table.table-board");
+    SelenideElement profileBtn = $x("//button[@class='mat-mdc-menu-trigger mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base' and " +
+            "@aria-haspopup='menu']");
 }
