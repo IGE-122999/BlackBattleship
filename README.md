@@ -88,6 +88,9 @@ Como jogador, quero visualizar os meus disparos anteriores no tabuleiro.
 ### US31 - Abortar Jogo
 Como jogador, quero abortar um jogo após este ter sido iniciado.
 
+### US32 - Alterar Cor da Página "Dark Mode"
+Como jogador, quero poder alterar o tipo de fundo da minha home page, escolhendo ativar ou não o "Dark Mode"
+
 ---
 
 ## 🎯 Epic 5 – Regras de Vitória
