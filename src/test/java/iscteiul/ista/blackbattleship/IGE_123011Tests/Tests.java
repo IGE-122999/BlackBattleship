@@ -107,5 +107,14 @@ public class Tests {
         $("footer").$$("button").findBy(exactText("Abort game")).shouldBe(visible).click();
         sleep(2000);
     }
+    @Test
+    @DisplayName("Alterar Dark Mode")
+    public void alterarDarkMode() {
+        //sleep(3000);
+        mainPage.settingsButton.shouldBe(visible).click();
+        //sleep(2000);
+        $("#settings-dark-mode-button").shouldBe(visible).shouldBe(enabled).click();
+        //sleep(2000);
+    }
 
 }
