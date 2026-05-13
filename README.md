@@ -3,9 +3,9 @@
 ---
 
 # Table of Contents
-- [Identificação do Grupo](#-indetificacao-do-grupo)
-- [Scrum Product Backlog](#-scrum-product-backlog-battleship-online)
-- [Notas a considerar](#-notas-a-considerar)
+- [Identificação do Grupo](#indetificacao-do-grupo)
+- [Scrum Product Backlog](#-scrum-product-backlog--battleship-online)
+- [Notas a considerar](#notas-a-considerar)
 
 ---
 
