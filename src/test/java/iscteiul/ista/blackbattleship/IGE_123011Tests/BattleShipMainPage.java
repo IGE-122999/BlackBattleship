@@ -6,5 +6,6 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class BattleShipMainPage {
     SelenideElement playWithFriend = $x("//span[contains(text(), 'Play with a friend')]");
+    SelenideElement playOnline = $x("//span[contains(text(), 'Play online')]");
     SelenideElement title = $x("//*[contains(text(), 'Battleship')]");
 }

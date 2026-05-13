@@ -11,6 +11,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -47,7 +48,19 @@ public class Tests {
             rejectButton.should(disappear, Duration.ofSeconds(5));
         }
     }
+
+    public void login(){
+        $("[formcontrolname='username']").sendKeys("user1");
+
+        sleep(1000);
+
+        $x("//button[contains(text(), 'Continue')]")
+                .shouldBe(visible)
+                .click();
+
+    }
     @Test
+    @DisplayName("Criar sala privada")
     public void playwithFriend() {
         sleep(3000);
 
@@ -57,13 +70,8 @@ public class Tests {
 
         sleep(2000);
 
-        $("[formcontrolname='username']").sendKeys("user1");
+        login();
 
-        sleep(1000);
-
-        $x("//button[contains(text(), 'Continue')]")
-                .shouldBe(visible)
-                .click();
 
         sleep(5000);
 
@@ -74,7 +82,15 @@ public class Tests {
         actualLink.shouldBe(visible).click();
         String generatedLink = actualLink.getText();
         sleep(2000);
-
-
     }
+    @Test
+    @DisplayName("Teste Jogar Online")
+    public void testJogarOnline() {
+        sleep(3000);
+        $x("//span[contains(text(), 'Play online')]").shouldBe(visible).click();
+        sleep(2000);
+        login();
+        sleep(5000);
+    }
+
 }
