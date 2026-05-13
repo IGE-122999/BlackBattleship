@@ -21,6 +21,7 @@ public class MainPageTest {
     @BeforeEach
     public void setUp() {
         open("https://www.jetbrains.com/");
+        closePopup();
     }
 
     @Test
