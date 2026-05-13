@@ -85,6 +85,9 @@ Como jogador, quero saber se o tiro foi acerto ou falha.
 ### US16 – Histórico de jogadas
 Como jogador, quero visualizar os meus disparos anteriores no tabuleiro.
 
+### US31 - Abortar Jogo
+Como jogador, quero abortar um jogo após este ter sido iniciado.
+
 ---
 
 ## 🎯 Epic 5 – Regras de Vitória
