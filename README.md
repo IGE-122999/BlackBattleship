@@ -2,12 +2,14 @@
 
 ---
 
-## Table of Contents
+# Table of Contents
 - [Identificação do Grupo](#-indetificacao-do-grupo)
+- [Scrum Product Backlog](#-scrum-product-backlog-battleship-online)
+- [Notas a considerar](#-notas-a-considerar)
 
 ---
 
-## Identificação do grupo:
+# Identificação do grupo:
 - Dinis Oliveira, nº 110764
 - João Jesus, nº 123025
 - Ricardo Cabrito, nº 122999
@@ -165,3 +167,10 @@ Como jogador, quero jogar modos alternativos com regras diferentes.
 
 ### US33 – Sistema de torneios
 Como jogador, quero participar em torneios competitivos.
+
+---
+
+# Notas a considerar
+
+### Organização das classes do projeto
+As classes *Page Object Class* não foram colocadas no *package* `src/main/java/`, pois os objetos de classe `SelenideElement` não eram processados no mesmo pacote. Assim sendo, só foi possível utilizar a funcionalidade mantendo as classes referidas no na diretoria `src/test/java/`.
