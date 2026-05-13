@@ -2,8 +2,7 @@ package iscteiul.ista.blackbattleship.IGE_123011Tests;
 
 import com.codeborne.selenide.Configuration;
 
-import static com.codeborne.selenide.Condition.disappear;
-import static com.codeborne.selenide.Condition.visible;
+import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Configuration.timeout;
 
 import com.codeborne.selenide.SelenideElement;
@@ -91,6 +90,22 @@ public class Tests {
         sleep(2000);
         login();
         sleep(5000);
+    }
+
+    @Test
+    @DisplayName("Abortar Jogo")
+    public void abortarJogo() {
+        sleep(2000);
+        testJogarOnline();
+        $$("button")
+                .findBy(exactText("Abort game"))
+                .shouldBe(visible, Duration.ofSeconds(30))
+                .click();
+        sleep(2000);
+        $("footer").shouldBe(visible);
+        sleep(2000);
+        $("footer").$$("button").findBy(exactText("Abort game")).shouldBe(visible).click();
+        sleep(2000);
     }
 
 }
