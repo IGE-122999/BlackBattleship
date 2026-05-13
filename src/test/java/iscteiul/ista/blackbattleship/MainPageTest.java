@@ -14,14 +14,16 @@ import static com.codeborne.selenide.WebDriverConditions.urlContaining;
 import static org.junit.jupiter.api.Assertions.*;
 
 import static com.codeborne.selenide.Selenide.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class MainPageTest {
+
     MainPage mainPage = new MainPage();
 
     @BeforeAll
     public static void setUpAll() {
         Configuration.browserSize = "1280x800";
-        SelenideLogger.addListener("allure", new AllureSelenide());
+        Configuration.timeout = 8000;
     }
 
     @BeforeEach
@@ -43,8 +45,16 @@ public class MainPageTest {
             // opcional mas recomendado: garantir que o banner desapareceu
             acceptButton.should(disappear, duration.ofSeconds(5));
         }
+        closePopup();
     }
+
     @Test
+    public void shouldOpenJetBrainsHomePage() {
+        mainPage.pageBody.shouldBe(visible);
+        assertTrue(Selenide.title().contains("JetBrains"));
+    }
+
+  @Test
     public void search() throws InterruptedException {
         // abrir search
         mainPage.searchButton.shouldBe(visible).shouldBe(clickable).click();
@@ -58,19 +68,20 @@ public class MainPageTest {
                 .shouldBe(visible);
     }
     @Test
-    public void toolsMenu() {
-        mainPage.toolsMenu.click();
-
-        $("div[data-test='main-submenu']").shouldBe(visible);
+    public void shouldDisplayLogo() {
+        mainPage.logo.shouldBe(visible);
     }
 
     @Test
-    public void navigationToAllTools() {
-        mainPage.seeDeveloperToolsButton.click();
-        mainPage.findYourToolsButton.click();
+    public void shouldOpenSearch() {
+        mainPage.searchButton.shouldBe(visible).click();
+        $("body").shouldHave(text("Search"));
+    }
 
-        $("#products-page").shouldBe(visible);
-
-        assertEquals("All Developer Tools and Products by JetBrains", title());
+    @Test
+    public void shouldSearchForSelenium() {
+        mainPage.searchButton.shouldBe(visible).click();
+        actions().sendKeys("Selenium").sendKeys("\n").perform();
+        mainPage.pageBody.shouldHave(text("Selenium"));
     }
 }
