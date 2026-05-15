@@ -37,15 +37,12 @@ public class MainPageTest {
                 $x("//button[contains(.,'Accept') or contains(.,'Agree')]");
 
         if (acceptButton.exists()) {
-            Duration duration = null;
             acceptButton
-                    .shouldBe(visible, duration.ofSeconds(5))
+                    .shouldBe(visible, Duration.ofSeconds(5))
                     .click();
 
-            // opcional mas recomendado: garantir que o banner desapareceu
-            acceptButton.should(disappear, duration.ofSeconds(5));
+            acceptButton.should(disappear, Duration.ofSeconds(5));
         }
-        closePopup();
     }
 
     @Test
@@ -54,7 +51,7 @@ public class MainPageTest {
         assertTrue(Selenide.title().contains("JetBrains"));
     }
 
-  @Test
+    @Test
     public void search() throws InterruptedException {
         // abrir search
         mainPage.searchButton.shouldBe(visible).shouldBe(clickable).click();
