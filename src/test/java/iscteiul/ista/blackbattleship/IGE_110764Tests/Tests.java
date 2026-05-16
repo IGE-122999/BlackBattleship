@@ -62,4 +62,15 @@ public class Tests {
         page.openInvitationLink(invitationLink);
         page.shouldShowPage();
     }
+
+    /**
+     * US08 - Grelha de jogo 10x10.
+     */
+    @Test
+    @DisplayName("US08 - Grelha de jogo 10x10")
+    public void shouldShow10x10Grid() {
+        page.startRobotGame();
+        page.shouldShowGameArea();
+        page.shouldHave10x10Grid();
+    }
 }
