@@ -73,4 +73,17 @@ public class Tests {
         page.shouldShowGameArea();
         page.shouldHave10x10Grid();
     }
+
+    /**
+     * US09 - Frota de navios.
+     * Como sistema, quero disponibilizar diferentes tipos de navios com tamanhos variados.
+     */
+    @Test
+    @DisplayName("US09 - Frota de navios")
+    public void shouldShowPlayerFleet() {
+        page.startRobotGame();
+
+        page.shouldShowGameArea();
+        page.shouldShowPlayerFleet();
+    }
 }
