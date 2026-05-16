@@ -86,4 +86,19 @@ public class Tests {
         page.shouldShowGameArea();
         page.shouldShowPlayerFleet();
     }
+
+    /**
+     * US15 - Resultado do disparo.
+     */
+    @Test
+    @DisplayName("US15 - Resultado do disparo")
+    public void shouldShowShotResult() {
+        page.startRobotGame();
+
+        page.shouldShowGameArea();
+
+        SelenideElement cell = page.shootAvailableCell();
+
+        page.shouldShowShotResult(cell);
+    }
 }
