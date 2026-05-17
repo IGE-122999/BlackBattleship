@@ -2,6 +2,7 @@ package iscteiul.ista.blackbattleship;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
+import iscteiul.ista.blackbattleship.IGE_122999Tests.BattleshipHomePage;
 import org.junit.jupiter.api.*;
 
 import java.time.Duration;

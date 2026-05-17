@@ -1,0 +1,1039 @@
+{
+  "id": "e94cae5d-9a93-4980-b478-a13b1a7a5cad",
+  "version": "2.0",
+  "name": "Teste_US-15",
+  "url": "https://papergames.io",
+  "tests": [{
+    "id": "a1b99fa0-7328-49d1-a738-efb5f36656b8",
+    "name": "Teste US-15",
+    "commands": [{
+      "id": "1d0aff8b-b9b2-4426-96b3-2f3256e09003",
+      "comment": "",
+      "command": "open",
+      "target": "/en/battleship",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "370e5f3b-f825-458e-bc00-0bfe03bdb216",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10a4ff48-72b1-45af-830c-50fc2d0aef86",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fc-cta-consent > .fc-button-label",
+      "targets": [
+        ["css=.fc-cta-consent > .fc-button-label", "css:finder"],
+        ["xpath=//button/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Consent')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae4538fd-b91a-4951-9f21-62aa64583cec",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2da0f1af-2b6c-4485-aae9-9ada50b62ede",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.btn-secondary:nth-child(2)",
+      "targets": [
+        ["css=.btn-secondary:nth-child(2)", "css:finder"],
+        ["xpath=//app-juicy-button[4]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9911312b-0dd3-47e1-b6a3-694ca32a526b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Play vs robot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5c384b1-2ebd-4106-9f38-0d7e4110986f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Play vs robot')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6330400-a59b-4b15-ba1b-d79e23a20d4b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ef5f7c0e-2452-4875-b60d-291d145eefd2",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(1) .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) .flex-grow-1", "css:finder"],
+        ["xpath=//span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3198fdf7-309a-4ae3-8990-c75c76a16b41",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2ab33e09-9d55-4a0e-a331-117876d29963",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5d2708c7-295b-474e-a5c4-d073fc5815ee",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e228c723-d3ac-4209-b8c8-b2e1e25cf94e",
+      "comment": "",
+      "command": "type",
+      "target": "css=.input-xl",
+      "targets": [
+        ["css=.input-xl", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/section/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "cabrito"
+    }, {
+      "id": "ad5adde9-3501-458f-af3f-21cf78c26605",
+      "comment": "",
+      "command": "click",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "336c224f-58fa-4ad0-8825-4e53f3d9b356",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.p-3 > .btn",
+      "targets": [
+        ["css=.p-3 > .btn", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//mat-dialog-container[@id='mat-mdc-dialog-serverApp0']/div/div/app-guest-registration-dialog/form/app-dialog-layout/div/footer/button", "xpath:idRelative"],
+        ["xpath=//footer/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e92711e4-c690-4a42-a6df-afe0cd304892",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.position-relative > .front",
+      "targets": [
+        ["css=.position-relative > .front", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c93e6b2f-342f-44c1-ad6b-6a6b14ac4bf9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "054e4e2a-338f-45f1-aa6c-b491b766fd56",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "78e9b8b2-6be0-4c8d-b981-e154fc75715b",
+    "name": "Teste US-30",
+    "commands": [{
+      "id": "73a22330-a6d9-478a-ad57-666c8f71eb32",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "605d1883-baa8-4eca-bf91-e4c4e98d6ea0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1a262a3-8054-45c5-a619-f071ab7c223a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=app-header-nav:nth-child(1) .me-2 .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=app-header-nav:nth-child(1) .me-2 .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//div[2]/app-header-nav/mat-toolbar/app-notifications-icon-button/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a70d3f7e-fc9d-4b81-905f-73541e3e5921",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=app-header-nav:nth-child(1) .me-2 .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=app-header-nav:nth-child(1) .me-2 .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//div[2]/app-header-nav/mat-toolbar/app-notifications-icon-button/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d99b5da8-dff5-4690-8b2f-6dd8acf938b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Battleship']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a219f9d-bc37-4802-90d7-a1668d47770a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Battleship']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30ecec49-c22a-49a6-a8a9-520c23911ac1",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(1) .front > .ng-fa-icon",
+      "targets": [
+        ["css=.w-100:nth-child(1) .front > .ng-fa-icon", "css:finder"],
+        ["xpath=//span[2]/fa-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "abc1131d-2097-4e2b-ae8b-5d59a7d10f34",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(1) .front > .ng-fa-icon",
+      "targets": [
+        ["css=.w-100:nth-child(1) .front > .ng-fa-icon", "css:finder"],
+        ["xpath=//span[2]/fa-icon", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "04f69e2a-90d6-4038-8f26-1347a0ff9107",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(1) > .btn-lg .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "889e7d51-eacc-4a43-abfb-d8fb16cd3b0f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(1) > .btn-lg .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(1) > .btn-lg .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c7160f4-8585-49d4-8008-c9e007fe48e3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79875574-6460-4e5e-a765-506437d84c58",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "39c1d35c-abc5-48e9-9ed9-02de5281b641",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aa132f7e-910c-4e2c-b705-394e95df53ee",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cd4cbe56-db5f-4ed6-b5a0-eee2fa1b0fff",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9c0691a2-25a8-453a-b832-2c0b20c4b317",
+    "name": "Teste US-27",
+    "commands": [{
+      "id": "5c6e0478-5b88-4d77-a55e-a7e0c55b913c",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "132ae4bf-0ee6-4dfb-b57e-5b1bae083953",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "550x692",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fedab906-2eb3-44db-a2d5-3052b3cb1e81",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .img-fluid",
+      "targets": [
+        ["css=.game-item:nth-child(1) .img-fluid", "css:finder"],
+        ["xpath=//img[@alt='Battleship']", "xpath:img"],
+        ["xpath=//a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "884b8cb4-e2fc-4f2a-8815-a5252ea823b5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "93c9b861-a20e-418d-aba3-b93f85f9097c",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn > .front",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn > .front", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c20a3be3-8dcb-4b08-b7cd-e731bf49f979",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "592bbba8-62a8-4181-a791-c73bcd641040",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b8925e88-b1cb-45b0-a990-4d8604587ef5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=See all",
+      "targets": [
+        ["linkText=See all", "linkText"],
+        ["css=.text-end:nth-child(2) > .btn", "css:finder"],
+        ["xpath=//a[contains(text(),'See all')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/en/t/4rxJoygHA')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'See all')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dba4ad5d-7bb8-49d1-a8f5-30e38dfd9dbb",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aab38ae5-1dae-4208-85b3-27306f418c3b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.mat-mdc-tooltip-trigger:nth-child(3) > .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=.mat-mdc-tooltip-trigger:nth-child(3) > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//mat-toolbar/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98524d62-74f4-4241-a493-5f45f56fa8d6",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.mat-mdc-tooltip-trigger:nth-child(3) > .mat-mdc-button-touch-target",
+      "targets": [
+        ["css=.mat-mdc-tooltip-trigger:nth-child(3) > .mat-mdc-button-touch-target", "css:finder"],
+        ["xpath=//mat-toolbar/button/span[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "458580c0-92ba-4766-be96-ba94e215efb4",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d78b9526-7d00-4117-af92-62e1dedc12f0",
+    "name": "Teste US-18",
+    "commands": [{
+      "id": "177c3d14-6edd-4602-ac9f-90923781fef8",
+      "comment": "",
+      "command": "open",
+      "target": "/en/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11bf08ae-4e15-4479-b2dc-a53e19295184",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1550x830",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1755cef-abb3-402f-86d5-3cd91cfada87",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.game-item:nth-child(1) .text-light",
+      "targets": [
+        ["css=.game-item:nth-child(1) .text-light", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Battleship')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2b4697da-aca0-4410-af2e-193f216e8d37",
+      "comment": "",
+      "command": "click",
+      "target": "css=.game-item:nth-child(1) .text-light",
+      "targets": [
+        ["css=.game-item:nth-child(1) .text-light", "css:finder"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Battleship')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "74928325-b4da-4777-aa7f-c983199e2db2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.me-2 > .fa-robot > path",
+      "targets": [
+        ["css=.me-2 > .fa-robot > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "39fced39-9292-4410-a5a8-a9760f9f074f",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.me-2 > .fa-robot > path",
+      "targets": [
+        ["css=.me-2 > .fa-robot > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "34d376da-3b37-4d7a-8e87-ef8be13e0251",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9dd0f2c6-e36c-465d-962e-b55648dba8a4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8f58d329-ce40-438c-a992-573941e43761",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86451981-9ec5-4457-a49e-ce440d2d1aff",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.w-100:nth-child(2) > .btn .flex-grow-1",
+      "targets": [
+        ["css=.w-100:nth-child(2) > .btn .flex-grow-1", "css:finder"],
+        ["xpath=//app-juicy-button[2]/button/span[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15772374-35f7-45c3-bdf7-b80d4146e04c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "70c113e3-af36-41bd-b304-58e611bd40cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1ea078f-251a-4af7-be2c-2e3db358bccb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae8103b2-a373-4daf-ab5b-ade7941eaeca",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "bc231210-2691-42f7-bb50-356ca4434e99",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a11dec3-dbf0-47f1-8cb4-ea55c1cb98f3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "cef3959b-5a4c-46e8-846a-bbcc29817382",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab68bab7-1b0b-457e-9f72-5027a4dc3b73",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1be0f20c-8ff4-40d4-b5dd-95e141b547c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "70b9e532-7fb3-4cc1-b9ba-2dcfdbc1ae09",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1686fc35-5e35-4c17-924e-4cdb75d711ea",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "44a7617a-d209-4d00-90cf-35a601bd2f18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "67bb2c82-ab7f-4ae5-8e07-3be780272800",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "68438796-16f9-4234-aa2b-7bc0ad764db9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "3227632b-5c6b-4bce-b099-a9a94a5206e3",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-3-0 .circle",
+      "targets": [
+        ["css=.cell-3-0 .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "89788009-2617-4c03-8c4d-0c3ba43d65b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question > path",
+      "targets": [
+        ["css=.fa-question > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "36a7453a-7dc0-4528-9457-5fc2fd32dd6b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(2)",
+      "targets": [
+        ["css=.weapon-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"],
+        ["xpath=//button[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8fc4d05d-9c68-4bf8-8cc0-a378e476c801",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "90d196c9-856b-46c1-b46b-55557793f064",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc345fde-4b18-4dae-820a-9efb12d16b90",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(3) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(3) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[2]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[3]/img", "xpath:idRelative"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b6c001c-b923-4243-9b58-04a4aeff0b7d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79f60681-f19a-415f-a6d5-996454db3b45",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ng-star-inserted:nth-child(3) > .null:nth-child(9) > .intersection",
+      "targets": [
+        ["css=.ng-star-inserted:nth-child(3) > .null:nth-child(9) > .intersection", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "96b6aa8a-e2ab-479a-8087-598770bb2b34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(3) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(3) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[2]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[3]/img", "xpath:idRelative"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e33f02e6-933e-4dc1-9a9f-faea121b5682",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2dab2ee9-7b96-4feb-9808-4c990cd1456d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-8-1 > .hover",
+      "targets": [
+        ["css=.cell-8-1 > .hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8f61aab-bbdc-452f-9664-044ba25d79ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6625a513-e415-4cc6-8bfc-5e1794d4c785",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.weapon-button:nth-child(3)",
+      "targets": [
+        ["css=.weapon-button:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfe70cb5-42ed-4285-93c4-30b5de2919cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(1) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(1) > img", "css:finder"],
+        ["xpath=//img[@alt='nuclear-bomb']", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button/img", "xpath:idRelative"],
+        ["xpath=//button/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ef184fc-335f-4ce5-baa9-41028bd2e613",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "1b39779b-7bf3-4026-9bfa-51784df999db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "9144543c-e155-4aa5-8418-312e3774ee27",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "dcbab71c-04b1-4ce3-8a9b-e9ce1707a696",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "a810e56a-3120-4829-9e0e-8b3333ccd758",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "ff8864f0-761c-44ae-83a4-9a7d6ff0945a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "edce5b26-210b-44fb-8b37-591e6eec0971",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5744fdb2-fd69-46c4-84cc-805846cc664d",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.weapon-button:nth-child(2)",
+      "targets": [
+        ["css=.weapon-button:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bb15046e-e5d7-4edb-8c57-4a15a1486493",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "916afde0-dc71-4311-9fbb-a737802047b7",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-question",
+      "targets": [
+        ["css=.fa-question", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c733323d-3488-4ae3-b756-72f78d769746",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c05ea89-934c-430e-9bc5-d777cc3254ba",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-0-1 path",
+      "targets": [
+        ["css=.cell-0-1 path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e70700d-0e8e-46c8-ad6a-1c64e05f54fc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.weapon-button:nth-child(3) > img",
+      "targets": [
+        ["css=.weapon-button:nth-child(3) > img", "css:finder"],
+        ["xpath=(//img[@alt='missile'])[3]", "xpath:img"],
+        ["xpath=//div[@id='player_weapons']/button[3]/img", "xpath:idRelative"],
+        ["xpath=//button[3]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14970374-2f6d-4391-83b0-b1cc1d840642",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.is-selected",
+      "targets": [
+        ["css=.is-selected", "css:finder"],
+        ["xpath=//div[@id='player_weapons']/button[3]", "xpath:idRelative"],
+        ["xpath=//button[3]", "xpath:position"],
+        ["xpath=//button[contains(.,'2')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1389ec3d-043a-4887-85c2-64dddae12d67",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cell-5-1 > .hover",
+      "targets": [
+        ["css=.cell-5-1 > .hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "45b1d7d8-75ad-4285-b283-2cb65a3bc2d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "900a3dc3-7752-47ed-9d4e-fe906499c6cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "5055856c-15dd-459c-a820-8f689caee0ed",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover > .circle",
+      "targets": [
+        ["css=.hover > .circle", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "875f78f6-0468-469e-b282-0d2924c3cd40",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b91e2c84-e6ec-4656-8ce1-7fe15297af42",
+      "comment": "",
+      "command": "click",
+      "target": "css=.target",
+      "targets": [
+        ["css=.target", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "319a8941-b330-4ede-8e03-ec3d8f11c28c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.hover",
+      "targets": [
+        ["css=.hover", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "620657ef-d665-4413-a5aa-24c3a44d87f8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5715be3c-6ef9-4994-aede-4406e4fb0174",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a1b99fa0-7328-49d1-a738-efb5f36656b8"]
+  }],
+  "urls": ["https://papergames.io/"],
+  "plugins": []
+}
