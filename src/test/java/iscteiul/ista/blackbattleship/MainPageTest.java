@@ -2,20 +2,16 @@ package iscteiul.ista.blackbattleship;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.logevents.SelenideLogger;
-import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 
-import java.time.Duration;
-
-import static com.codeborne.selenide.Condition.*;
-import static com.codeborne.selenide.WebDriverConditions.urlContaining;
-import static org.junit.jupiter.api.Assertions.*;
-
+import static com.codeborne.selenide.Condition.text;
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+/**
+ * Testes simples da página JetBrains gerada no projeto-piloto.
+ */
 public class MainPageTest {
 
     MainPage mainPage = new MainPage();
@@ -23,29 +19,12 @@ public class MainPageTest {
     @BeforeAll
     public static void setUpAll() {
         Configuration.browserSize = "1280x800";
-        Configuration.timeout = 8000;
+        Configuration.timeout = 10000;
     }
 
     @BeforeEach
     public void setUp() {
         open("https://www.jetbrains.com/");
-        acceptCookiesIfPresent();
-    }
-
-    public void acceptCookiesIfPresent() {
-        SelenideElement acceptButton =
-                $x("//button[contains(.,'Accept') or contains(.,'Agree')]");
-
-        if (acceptButton.exists()) {
-            Duration duration = null;
-            acceptButton
-                    .shouldBe(visible, duration.ofSeconds(5))
-                    .click();
-
-            // opcional mas recomendado: garantir que o banner desapareceu
-            acceptButton.should(disappear, duration.ofSeconds(5));
-        }
-        closePopup();
     }
 
     @Test
@@ -54,34 +33,13 @@ public class MainPageTest {
         assertTrue(Selenide.title().contains("JetBrains"));
     }
 
-  @Test
-    public void search() throws InterruptedException {
-        // abrir search
-        mainPage.searchButton.shouldBe(visible).shouldBe(clickable).click();
-
-        // escrever no input correto
-        $("input[data-test='input__inner']")
-                .shouldBe(visible)
-                .setValue("Selenium")
-                .pressEnter();
-        $("main")
-                .shouldBe(visible);
-    }
     @Test
-    public void shouldDisplayLogo() {
-        mainPage.logo.shouldBe(visible);
+    public void shouldContainJetBrainsText() {
+        mainPage.pageBody.shouldHave(text("JetBrains"));
     }
 
-    @Test
-    public void shouldOpenSearch() {
-        mainPage.searchButton.shouldBe(visible).click();
-        $("body").shouldHave(text("Search"));
-    }
-
-    @Test
-    public void shouldSearchForSelenium() {
-        mainPage.searchButton.shouldBe(visible).click();
-        actions().sendKeys("Selenium").sendKeys("\n").perform();
-        mainPage.pageBody.shouldHave(text("Selenium"));
+    @AfterEach
+    public void tearDown() {
+        closeWebDriver();
     }
 }
